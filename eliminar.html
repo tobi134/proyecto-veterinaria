@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="estilo2.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="content">
+            <img src="img/princ.png" alt="Logo veterinaria">
+
+            <nav>
+                <a href="pantallaNos.html">Nosotros</a>
+                <a href="PantallaAgen.html">Agendar cita</a>
+                <a href="eliminar.html">eliminar</a>
+                
+            </nav> 
+            <div class="clearfix"></div>
+        </div>
+          
+    </header>
+   <br><br>
+    <div style="display: flex; justify-content: center;">
+        <form method="post"  action="http://localhost/eliminar.php" target="resultado">
+            <div class="wave-group">
+                <input required="" type="text" class="input" name="name">
+                <span class="bar"></span>
+                <label class="label">
+                  <span class="label-char" style="--index: 0">N</span>
+                  <span class="label-char" style="--index: 1">o</span>
+                  <span class="label-char" style="--index: 2">m</span>
+                  <span class="label-char" style="--index: 3">b</span>
+                  <span class="label-char" style="--index: 3">r</span>
+                  <span class="label-char" style="--index: 3">e</span>
+                </label>  
+                <br>
+                <button  target="resultado">
+                    Buscar
+                </button>
+            </div>
+            
+        </form>
+    </div>
+    <div class="container" style="display: flex; justify-content:center;">
+        <iframe name="resultado" style="width: 400%;height: 400px;; border:1px solid white"></iframe>
+    </div>
+</body>
+</html>

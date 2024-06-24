@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <title>Veterinaria UACJ</title>
+</head>
+
+<!--Seeccion de menu-->
+<body>
+  
+        <!--Header-->
+        <header>
+        <div class="content">
+           
+            <a href="main.html">
+                <img src="img/princ.png" alt="Logo veterinaria"></a>
+            <nav>
+                
+                <a href="pantallaNos.html"> <b>Nosotros</b></a>
+                <a href="PantallaAgen.html"><b>Agendar cita</b></a>
+                <a href="eliminar.html">Eliminar</a>
+                
+            </nav> 
+      
+            <div class="clearfix"></div>
+        </div>
+    </header>
+
+<!--Seccion de descripcion-->
+    <section class="content">
+        <div class="descripcionVeterinaria">
+            <h1>
+                 <br>
+                 <img src="img/veecRevision.png"
+                 alt="perrodecorativo1" style="width: 10%;height: 10%; "
+                 > <b>Agendar cita</b></h1>
+            <h3>Descripcion:</h3>
+            <p>
+                Bienvenido, aqui usted registrara su cita.
+            </p>
+                <div class="clearfix"></div>
+            </div>
+    </section>
+<!--formulariomaldito uuuu que miedo-->
+<form action="http://localhost/Gestor.php"
+method="post"
+target="Resultado">
+   <section class="content">
+       <h1>Seleccione</h1>
+       <ul class="Agenda">
+           <!--dia-->
+           <li>
+               <b>Hora :</b>
+               <select id="Hora" name="Hora"
+               style="width: 166px; border: 1px rgb(128, 0, 255);
+               color: black; font-weight:  bold; 
+               background-color: rgb(202, 202, 202); 
+               text-align:center ;">
+                   <option value=""><b>Escoja una hora</b></option>
+                   <!-- los value siempre debieron ser la hora XD
+                   no index-->
+                   <option value="12:00 PM">12:00 PM</option>
+                   <option value="1:30 PM">1:30 PM</option>
+                   <option value="2:00 PM">2:00 PM</option>
+                   <option value="3:30 PM">3:30 PM</option>
+                   <option value="4:00 PM">4:00 PM</option>
+                   <option value="5:30 PM">5:30 PM</option>
+                   <option value="6:00 PM">6:00 PM</option>
+                   <option value="7:30 PM">7:30 PM</option>
+                   <option value="8:00 PM">8:00 PM</option>
+                   <option value="9:30 PM">9:30 PM</option>
+                   <option value="10:00 PM">10:00 PM</option>
+                   <option value="11:30 PM">11:30 PM</option>
+                   <option value="12:00 AM">12:00 AM</option>
+               </select>
+           </li>
+           <!--hora-->
+           <li>
+               <b>Dia :</b>
+               <select id="Dia" name="Dia"
+               style="width: 166px; border: 1px rgb(128, 0, 255);
+               color: black; font-weight:  bold; 
+               background-color: rgb(202, 202, 202); text-align:center ;">
+               <option value="index 0"><b> Escoja un dia </b></option>
+               <option value="Lunes"> Lunes </option>
+               <option value="Martes"> Martes </option>
+               <option value="Miercoles"> Miercoles </option>
+               <option value="Juves"> Jueves </option>
+               <option value="Viernes"> Viernes </option>
+               <option value="Sabado"> Sabado </option>
+               <option value="Domingo"> Domingo </option>
+           </select>
+           </li>
+           <!--mes-->
+           <li>
+               <b>Mes :</b>
+               <select id="Mes" name="Mes"
+               style="width: 166px; border: 1px rgb(128, 0, 255);
+               color: black; font-weight:  bold; 
+               background-color: rgb(202, 202, 202); text-align:center ;">
+               <option value="index 0"><b> Escoja un mes </b></option>
+               <option value="Enero"> Enero </option>
+               <option value="Febrero"> Febrero </option>
+               <option value="Marzo"> Marzo </option>
+               <option value="Abril"> Abril </option>
+               <option value="Mayo"> Mayo </option>
+               <option value="Junio"> Junio </option>
+               <option value="Julio"> Julio </option>
+               <option value="Agosto"> Agosto </option>
+               <option value="Septiembre"> Septiembre </option>
+               <option value="Octubre"> Octubre </option>
+               <option value="Noviembre"> Noviembre </option>
+               <option value="Diciembre"> Diciembre </option>
+           </select>
+           </li>
+           <br><br>
+           <h2>Llene el siguiente campo</h2>
+           <ul>
+               <br><br>
+               <b>Nombre del dueño:</b>
+               <input type="text" id="Ndueño" name="Ndueño" 
+               style="width: 300px; height: 40px; text-align: center;
+               border: 2px;" maxlength="50" placeholder="Escriba aqui">
+               <br><br>
+               <b>Nombre de la mascota :</b>
+               <input type="text" id="Nmascota" name="Nmascota" 
+               style="width: 300px; height: 40px; text-align: center;
+               border: 2px;" maxlength="10" placeholder="Escriba aqui">
+                   <br><br>
+               <b>Raza:</b>
+               <input type="text" id="Raza" name="Raza" 
+               style="width: 300px; height: 40px; text-align: center;
+               border: 2px;" maxlength="10" placeholder="Escriba aqui">
+               
+           </ul>
+           <br><br> <br>
+           <!-- el btn ahora tiene un proposito-->
+           <input type="submit"
+            class="btn btn-primary"
+             name="submit"
+              value="Agendar cita"
+              >
+
+             <img src="img/vecBaño.png" 
+             alt="Revision de mascota" style="width: 20%; height: 70%;;">
+             
+       </ul>
+   </section>
+</form>
+<iframe name="Resultado"  style="width: 80%;height: 80%;">
+
+</iframe>
+<!--formulariomaldito uuuu que miedo-->
+<form action="http://localhost/Gestor QR.php"
+method="post"
+target="resultado">
+<input type="submit"
+class="btn btn-primary"
+ name="submit"
+  value="Generar tu codigo QR"
+  >
+                <iframe name="codigoqr"
+                style="width: 100%;height: 800px;">
+            </iframe>
+            </form>
+</div>
+<footer>
+   <p>Veterinaria - Clinica - Cd.Juarez Chihuahua</p>
+</footer>
+</body>
+</html>
